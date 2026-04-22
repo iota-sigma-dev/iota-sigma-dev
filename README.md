@@ -1,9 +1,6 @@
 # 🦅 José | @iota-sigma-dev
 **Technical Project Manager | DevSecOps & AI-Augmented SDLC Architect**
 
-📍 Río Cuarto, Córdoba, Argentina
-🛡️ *"Aquí no hay cookies, pero hay OSINT profundo."*
-
 ---
 
 ## 🎯 Operativa Base & Stack
@@ -45,4 +42,4 @@ Arquitecto Core y PM de **OrderKill**, plataforma B2B SaaS diseñada para refact
 *   🏗️ Construyendo arquitecturas Zero-Trust y herramientas AI-Augmented.
 *   📩 Abierto a colaboraciones en DevSecOps, automatización de SDLC y consultoría arquitectónica.
 
-*"El código muta, la arquitectura perdura."*
+🛡️ *"Aquí no hay cookies, pero hay OSINT profundo."*
