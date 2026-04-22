@@ -1,7 +1,7 @@
 # 🦅 José | @iota-sigma-dev
 **Technical Project Manager | DevSecOps & AI-Augmented SDLC Architect**
 
-📍 Río Cuarto, Córdoba, Argentina
+📍 Argentina
 🛡️ *"Early bird gets the worm, but second mice gets the cheese. Aquí no hay cookies, pero hay OSINT profundo."*
 
 ---
