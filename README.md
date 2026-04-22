@@ -11,13 +11,13 @@
 
 ---
 
-## 🚀 Despliegue Actual: [OrderKill](https://github.com/iota-sigma-dev) (B2B SaaS)
-Arquitecto Core y PM de **OrderKill**, plataforma B2B SaaS diseñada para refactorizar la logística y finanzas del sector gastronómico a nivel corporativo (Repositorio Privado).
+## 🚀 Despliegue Actual: (B2B SaaS)
+Arquitecto Core y PM: plataforma B2B SaaS diseñada para refactorizar la logística y finanzas del sector gastronómico a nivel corporativo.
 
 **Specs Arquitectónicos:**
-*   **Aislamiento Multi-Tenant:** Row-Level Security (RLS) en PostgreSQL delegando la seguridad al motor.
-*   **Zero-Trust Network:** Infraestructura "Dark Host" sobre VPS + Cloudflare Tunnels.
-*   **Inteligencia Agéntica:** Flujos asíncronos para soporte proactivo (CoWorker) orquestado con HITL.
+*   **Aislamiento Multi-Tenant:** Row-Level Security (RLS)
+*   **Zero-Trust Network:** Infraestructura "Dark Host" sobre VPS + Tunnels.
+*   **Inteligencia Agéntica:** Flujos asíncronos para soporte proactivo (CoWorker) orquestado con Human-In-The-Loop.
 
 ---
 
@@ -25,7 +25,7 @@ Arquitecto Core y PM de **OrderKill**, plataforma B2B SaaS diseñada para refact
 
 > 💡 *Mi actividad de commits refleja diseño de IaC, pipelines y gobernanza del ecosistema, operando como embudo táctico antes del código de negocio.*
 
-### Arsenal Táctico
+### Stack tecnológico
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
