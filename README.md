@@ -28,8 +28,15 @@ Arquitecto Core y PM de **OrderKill**, plataforma B2B SaaS diseñada para refact
 
 > 💡 *Mi actividad de commits refleja diseño de IaC, pipelines y gobernanza del ecosistema, operando como embudo táctico antes del código de negocio.*
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=iota-sigma-dev&show_icons=true&theme=tokyonight)](https://github.com/iota-sigma-dev)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iota-sigma-dev&layout=compact&theme=tokyonight)](https://github.com/iota-sigma-dev)
+### Arsenal Táctico
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
 ---
 
