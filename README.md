@@ -1,5 +1,7 @@
-# 🦅 José | @iota-sigma-dev
+# 🦅 @iota-sigma-dev
 **Technical Project Manager | DevSecOps & AI-Augmented SDLC Architect**
+
+🛡️ *"Aquí no hay cookies, pero hay OSINT profundo."*
 
 ---
 
@@ -11,21 +13,21 @@
 
 ---
 
-## 🚀 Despliegue Actual: (B2B SaaS)
-Arquitecto Core y PM: plataforma B2B SaaS diseñada para refactorizar la logística y finanzas del sector gastronómico a nivel corporativo.
+## 🚀 Despliegues Actuales
+Arquitecto Core y PM de ecosistemas B2B SaaS enfocados en logística de alta concurrencia y transacciones financieras seguras (Operando en Stealth Mode / Repositorios Privados).
 
 **Specs Arquitectónicos:**
-*   **Aislamiento Multi-Tenant:** Row-Level Security (RLS)
-*   **Zero-Trust Network:** Infraestructura "Dark Host" sobre VPS + Tunnels.
-*   **Inteligencia Agéntica:** Flujos asíncronos para soporte proactivo (CoWorker) orquestado con Human-In-The-Loop.
+*   **Aislamiento Multi-Tenant:** Row-Level Security (RLS) en bases de datos relacionales, delegando la seguridad al motor.
+*   **Zero-Trust Network:** Infraestructuras "Dark Host" sobre VPS + Cloudflare Tunnels para ofuscación de red.
+*   **Inteligencia Agéntica:** Flujos asíncronos para soporte proactivo orquestado con HITL (Human-in-the-Loop).
 
 ---
 
 ## 📊 Telemetría y Enfoque
 
-> 💡 *Mi actividad de commits refleja diseño de IaC, pipelines y gobernanza del ecosistema, operando como embudo táctico antes del código de negocio.*
+> 💡 *La actividad de este perfil refleja exclusivamente diseño de IaC, pipelines y gobernanza de ecosistemas corporativos bajo Acuerdos de Confidencialidad (NDA). El código de negocio reside en silos privados aislados.*
 
-### Stack tecnológico
+### Arsenal Táctico
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
@@ -42,4 +44,4 @@ Arquitecto Core y PM: plataforma B2B SaaS diseñada para refactorizar la logíst
 *   🏗️ Construyendo arquitecturas Zero-Trust y herramientas AI-Augmented.
 *   📩 Abierto a colaboraciones en DevSecOps, automatización de SDLC y consultoría arquitectónica.
 
-🛡️ *"Aquí no hay cookies, pero hay OSINT profundo."*
+*"El código muta, la arquitectura perdura."*
