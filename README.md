@@ -1,5 +1,5 @@
 # 🦅 Iota-Signa-Dev
-**InfoSec Engineer | Agentic AI Architect | DevSecOps Lead**
+**Technical Project Manager | DevSecOps & AI-Augmented SDLC Architect**
 
 > "Securing the evolution of autonomous systems through robust governance, immutable infrastructure, and high-performance engineering."
 
@@ -7,11 +7,9 @@
 
 ## 🎯 Profile Overview
 
-I am a Cybersecurity specialist and Systems Engineer with over 15 years of experience building and securing complex IT ecosystems. My current focus lies at the intersection of **Agentic AI Governance** and **DevSecOps**, where I orchestrate hybrid environments (Humans + Autonomous Agents) with a strict "Security-First" approach.
-
-- **🛡️ InfoSec & Hardening:** Top 5% Rank on **Hack The Box**. Expert in **Linux Kernel Hardening**, **RBAC/ACL** architecture, and **IDS/IPS** orchestration (CrowdSec, Fail2Ban).
-- **🤖 Agentic AI Governance:** Specialist in designing secure, governed LLM-powered agents (LangChain, RAG) with robust audit trails.
-- **🏗️ DevSecOps & Networking:** Architecting immutable CI/CD pipelines and complex networking resolutions (Netplan, systemd-networkd, Cloudflare Zero Trust).
+- **🛡️ InfoSec & Hardening:** Top 5% Rank on **Hack The Box**. Expert in **Linux Kernel Hardening**, **RBAC/ACL** architecture, and **IDS/IPS** orchestration. Specialist in **Dark Host** infrastructures for network obfuscation.
+- **🤖 Agentic AI Governance:** Architect of hybrid environments (Humans + Agents). Specialist in **HITL (Human-in-the-Loop)** orchestration and secure RAG deployment.
+- **🏗️ DevSecOps & Networking:** Orchestrating immutable CI/CD pipelines and **Zero-Trust Network** perimeters. expert in resolving L3-level networking and systemd race conditions.
 
 ---
 
@@ -21,10 +19,10 @@ I am a Cybersecurity specialist and Systems Engineer with over 15 years of exper
 OrderKill (v4.5.3 Golden State) is a multi-tenant platform for the retail and food industry, serving as a benchmark for modern, secure, and AI-augmented software development.
 
 ### Technical Highlights:
-- **🔒 Advanced Multi-Tenancy:** Implemented **Row Level Security (RLS)** at the database level via Prisma extensions, ensuring cryptographic data isolation between tenants.
-- **🧠 CoWorker AI Engine:** An autonomous agent layer powered by **LangChain** and **pgvector**, capable of real-time inventory management and contextual business logic.
-- **🛠️ DevSecOps Pipeline:** Full "Shift-Left" security integration using **Semgrep** and **Gitleaks** within a **Turborepo** monorepo structure.
-- **⚡ Modern Stack:** Built on **Next.js 16**, **React 19**, **Hono API**, and **PostgreSQL**, optimized for Edge compatibility and high concurrency.
+- **🔒 Advanced Multi-Tenancy:** Implemented **Row Level Security (RLS)** via Prisma extensions, ensuring cryptographic data isolation and logical segregation in a shared database environment.
+- **🧠 CoWorker AI Engine:** An autonomous agent layer with **HITL governance**, powered by **LangChain** and **pgvector** for real-time inventory and business logic automation.
+- **🛠️ DevSecOps Pipeline:** Full "Shift-Left" integration with **Semgrep** and **Gitleaks**. Identity management via **@orderkill/security** using Edge-compatible JWT/JWE.
+- **⚡ Modern Stack:** Built on **Next.js 16**, **React 19**, and **Hono**, featuring the premium **"Stitch"** visual identity for a state-of-the-art user experience.
 
 ---
 
