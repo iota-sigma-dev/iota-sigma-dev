@@ -18,7 +18,7 @@ Transitioning from traditional Ops to immutable, security-first infrastructure.
 - **Containerization:** Architecting Docker-based monorepos (Turborepo) with a focus on resource optimization and isolation.
 
 ## 3. Information Security & Compliance
-Expertise in protecting corporate assets and ensuring regulatory alignment.
+Expertise in protecting corporate assets and ensure regulatory alignment.
 - **IAM (Identity & Access Management):** Deep experience with Active Directory, LDAP, and modern OAuth/OIDC/NextAuth flows.
 - **Regulatory Frameworks:** Hands-on implementation of controls for ISO 27001, NIST 800-53, HIPAA, and GDPR.
 - **Vulnerability Management:** Systematic identification and remediation of security flaws through ethical hacking and forensic analysis.
@@ -26,7 +26,7 @@ Expertise in protecting corporate assets and ensuring regulatory alignment.
 ## 4. Fullstack Engineering (Performance First)
 Building robust applications that scale without compromising speed or security.
 - **Advanced State Management:** Implementing predictable data flows with Zustand and optimized React 19 patterns.
-- **API Architecture:** Designing high-throughput, Edge-compatible APIs using Hono and TypeScript.
+- **API Architecture:** Designing high-throughput, Edge-compatible APIs using Hono and TypeScript 5.7.
 - **Multi-Tenant Databases:** Specialized in Row Level Security (RLS) to ensure absolute data privacy in SaaS environments.
 
 ## 5. Technical Implementation Strategy (The "How")

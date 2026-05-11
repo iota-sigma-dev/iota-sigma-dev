@@ -7,7 +7,7 @@
 
 ## 🎯 Profile Overview
 
-- **🛡️ InfoSec & Hardening:** Top 5% Rank on **Hack The Box**. Expert in **Linux Kernel Hardening**, **RBAC/ACL** architecture, and **IDS/IPS** orchestration. Specialist in **Dark Host** infrastructures for network obfuscation.
+- **🛡️ InfoSec & Hardening:** Top 5% Rank on **Hack The Box** ([View Profile](https://app.hackthebox.com/users/iota-sigma-dev)). Expert in **Linux Kernel Hardening**, **RBAC/ACL** architecture, and **IDS/IPS** orchestration. Specialist in **Dark Host** infrastructures for network obfuscation.
 - **🤖 Agentic AI Governance:** Architect of hybrid environments (Humans + Agents). Specialist in **HITL (Human-in-the-Loop)** orchestration and secure RAG deployment.
 - **🏗️ DevSecOps & Networking:** Orchestrating immutable CI/CD pipelines and **Zero-Trust Network** perimeters. expert in resolving L3-level networking and systemd race conditions.
 
@@ -42,7 +42,7 @@ OrderKill (v4.5.3 Golden State) is a multi-tenant platform for the retail and fo
 - **🔒 Advanced Multi-Tenancy:** Implemented **Row Level Security (RLS)** via Prisma extensions, ensuring cryptographic data isolation and logical segregation in a shared database environment.
 - **🧠 CoWorker AI Engine:** An autonomous agent layer with **HITL governance**, powered by **LangChain** and **pgvector** for real-time inventory and business logic automation.
 - **🛠️ DevSecOps Pipeline:** Full "Shift-Left" integration with **Semgrep** and **Gitleaks**. Identity management via **@orderkill/security** using Edge-compatible JWT/JWE.
-- **⚡ Modern Stack:** Built on **Next.js 16**, **React 19**, and **Hono**, featuring the premium **"Stitch"** visual identity for a state-of-the-art user experience.
+- **⚡ Modern Stack:** Built on **Next.js 15 (Canary)**, **React 19**, and **Hono**, featuring the premium **"Stitch"** visual identity for a state-of-the-art user experience.
 
 ---
 
@@ -76,7 +76,7 @@ Beyond standard development, I specialize in resolving complex architectural fai
 | **Artificial Intelligence** | LangChain, RAG Engines, Vector Databases (pgvector), Anthropic/OpenAI/Ollama |
 | **Security & InfoSec** | IAM, JWT/JWE (Jose), Semgrep, Gitleaks, Ethical Hacking (HTB), Burp Suite, ZAP |
 | **Infrastructure / DevOps** | Docker, Turborepo, PNPM, NGINX, Redis, PgBouncer, Terraform, Bash/Python |
-| **Fullstack Development** | Next.js 16 (App Router), React 19, TypeScript 6.0, Prisma ORM, Hono, Zustand |
+| **Fullstack Development** | Next.js 15 (App Router), React 19, TypeScript 5.7, Prisma ORM, Hono, Zustand |
 | **Compliance** | ISO/IEC 27001, NIST CSF, HIPAA, GDPR, CCPA |
 
 ---
