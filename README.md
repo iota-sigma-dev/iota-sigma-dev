@@ -13,6 +13,26 @@
 
 ---
 
+## 🏆 Top 10 Professional Certifications
+
+A curated selection of technical validations supporting my multi-disciplinary expertise:
+
+1.  **Hack The Box** — Top 5% Global Rank (119 Targets Compromised).
+2.  **Educación IT** — Cybersecurity Professional Path (283 hrs).
+3.  **Microsoft** — Microsoft Certified Professional (MCP).
+4.  **Educación IT** — Ethical Hacking Specialist.
+5.  **Educación IT** — Cloud Computing & Infrastructure.
+6.  **LinkedIn Learning** — Leveraging AI for GRC (Governance, Risk, & Compliance).
+7.  **Educación IT** — Secure Development (DevSecOps).
+8.  **LinkedIn Learning** — Linux System Engineer (Networking & Automation).
+9.  **Maltego** — Cybersecurity & Cybercrime Investigations (OSINT).
+10. **LinkedIn Learning** — NIST Risk Management Framework (RMF).
+
+> [!TIP]
+> View the complete list of 30+ certifications in [CERTIFICATIONS.md](./CERTIFICATIONS.md).
+
+---
+
 ## 🚀 Featured Project: OrderKill Ecosystem
 **High-Performance B2B SaaS | Built in 33 Days**
 

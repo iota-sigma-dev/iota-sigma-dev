@@ -46,7 +46,7 @@ Solving the "unsolvable" failures at the intersection of OS and Network.
 
 ## Why Choose My Expertise?
 - **Global Experience:** Proven track record in multicultural, enterprise environments, including roles at **GlobalLogic (Coalfire USA)**, **GM**, **HP**, and **EDS**.
-- **Elite Technical Skills:** Top 5% ranking on Hack The Box, demonstrating real-world problem-solving under pressure.
+- **Elite Technical Skills:** Top 5% ranking on Hack The Box, demonstrating real-world problem-solving under pressure. Supported by over **500+ cumulative hours** of specialized training in Cibersecurity, Linux Engineering, and Cloud Infrastructure.
 - **Agile Execution:** Demonstrated ability to deliver complex, multi-layered projects (like OrderKill) in record timeframes.
 
 ---
