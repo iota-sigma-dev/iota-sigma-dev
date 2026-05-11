@@ -28,6 +28,18 @@ OrderKill (v4.5.3 Golden State) is a multi-tenant platform for the retail and fo
 
 ---
 
+## 🏗️ How I Implemented the Stack (Technical Strategy)
+
+The **OrderKill** ecosystem was engineered for extreme scalability and security through a modular, automated approach:
+
+- **Monorepo Orchestration:** Implemented a **Turborepo** structure to manage multiple high-concurrency apps (Customer Portal, Admin Dashboard, Edge API) while maintaining shared logic through internal packages (`@orderkill/security`, `@orderkill/db`).
+- **Automated Multi-Tenancy:** Engineered a robust isolation layer using **Prisma Client Extensions**. This automatically injects `tenantId` context into every database operation, reinforced by **PostgreSQL Row Level Security (RLS)** for absolute data segregation.
+- **Agentic AI Integration:** Built the "CoWorker" assistant using **LangChain** for complex tool-calling orchestration and **pgvector** for semantic search. This allows the AI to perform Retrieval-Augmented Generation (RAG) on specific tenant inventory and rules.
+- **Shift-Left Security:** Hardened the development lifecycle by integrating **Semgrep** and **Gitleaks** directly into the CI pipeline, ensuring no vulnerability or secret reaches production.
+- **Edge-Ready Performance:** Utilized **Hono** and **Jose** (JWT/JWE) to ensure the authentication and API layers are compatible with global Edge runtimes (Cloudflare Workers / Vercel Edge).
+
+---
+
 ## 🔬 Technical Deep Dives & Security Hardening
 
 Beyond standard development, I specialize in resolving complex architectural failures and implementing high-level security controls:
@@ -65,7 +77,7 @@ My career is backed by global roles at industry leaders where I led critical IT 
 
 I am open to collaborations in **Agentic AI Governance**, **DevSecOps automation**, and **Architectural Consulting**.
 
-- **LinkedIn:** [iota-sigma-dev](https://www.linkedin.com/in/iota-sigma-dev/)
+- **LinkedIn:** [Iota-Signa-Dev](https://www.linkedin.com/in/jose-i-carpanzano/)
 - **Portfolio/Blog:** [iota-sigma.dev](https://iota-sigma.dev)
 - **Contact:** Via GitHub / LinkedIn
 
