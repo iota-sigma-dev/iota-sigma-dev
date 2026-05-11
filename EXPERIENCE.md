@@ -1,7 +1,7 @@
 # Capabilities & Experience Proposal
 **Strategic Engineering & InfoSec Solutions**
 
-This document outlines the specific capabilities and professional services provided by **José Ignacio Carpanzano**, leveraging over 15 years of technical leadership in high-stakes environments.
+This document outlines the specific capabilities and professional services provided by **Iota-Signa-Dev**, leveraging over 15 years of technical leadership in high-stakes environments.
 
 ---
 
@@ -47,5 +47,5 @@ Solving the "unsolvable" failures at the intersection of OS and Network.
 ### Contact & Collaboration
 I am available for senior consulting roles, architectural reviews, and high-impact project leadership.
 
-**Email:** [CARPANZANOJOSE@GMAIL.COM](mailto:CARPANZANOJOSE@GMAIL.COM)  
+**Contact:** Via GitHub / LinkedIn  
 **Location:** Río Cuarto, Córdoba, Argentina (Available for global remote collaboration)

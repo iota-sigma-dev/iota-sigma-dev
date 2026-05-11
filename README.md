@@ -1,4 +1,4 @@
-# 🦅 José Ignacio Carpanzano
+# 🦅 Iota-Signa-Dev
 **InfoSec Engineer | Agentic AI Architect | DevSecOps Lead**
 
 > "Securing the evolution of autonomous systems through robust governance, immutable infrastructure, and high-performance engineering."
@@ -65,9 +65,9 @@ My career is backed by global roles at industry leaders where I led critical IT 
 
 I am open to collaborations in **Agentic AI Governance**, **DevSecOps automation**, and **Architectural Consulting**.
 
-- **LinkedIn:** [jose-ignacio-carpanzano](https://www.linkedin.com/in/jose-ignacio-carpanzano/)
+- **LinkedIn:** [iota-sigma-dev](https://www.linkedin.com/in/iota-sigma-dev/)
 - **Portfolio/Blog:** [iota-sigma.dev](https://iota-sigma.dev)
-- **Email:** [CARPANZANOJOSE@GMAIL.COM](mailto:CARPANZANOJOSE@GMAIL.COM)
+- **Contact:** Via GitHub / LinkedIn
 
 ---
 *"Code mutates, architecture endures."*
