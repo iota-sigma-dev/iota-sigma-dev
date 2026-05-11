@@ -1,5 +1,5 @@
 # Capabilities & Experience Proposal
-**Strategic Engineering & InfoSec Solutions**
+**Advanced Strategic Engineering & InfoSec Architecture**
 
 This document outlines the specific capabilities and professional services provided by **Iota-Signa-Dev**, leveraging over 15 years of technical leadership in high-stakes environments.
 
@@ -7,15 +7,15 @@ This document outlines the specific capabilities and professional services provi
 
 ## 1. Agentic AI Governance & Implementation
 I help organizations bridge the gap between AI experimentation and production-ready, secure autonomous systems.
-- **Secure Agent Architectures:** Designing LLM-powered agents with strict guardrails, preventing prompt injection and data leakage.
-- **RAG Ecosystems:** Implementing Retrieval-Augmented Generation using vector databases (pgvector, Pinecone) for context-aware automation.
-- **Orchestration:** Expert use of LangChain and custom Python agents for complex workflow automation.
+- **Secure Agent Architectures:** Designing LLM-powered agents with strict guardrails and **HITL (Human-in-the-Loop)** governance to prevent prompt injection and data leakage.
+- **RAG Ecosystems:** Implementing Retrieval-Augmented Generation using vector databases (pgvector) for context-aware automation in multi-tenant environments.
+- **Orchestration:** Expert use of LangChain and custom autonomous engines for enterprise-grade workflow automation.
 
 ## 2. DevSecOps & Modern Infrastructure
 Transitioning from traditional Ops to immutable, security-first infrastructure.
-- **CI/CD Security (Shift-Left):** Integrating automated vulnerability scanning (SAST/DAST) and secret detection into the development lifecycle.
-- **Monorepo Management:** Scaling development teams using Turborepo and PNPM for shared logic and consistent deployments.
-- **Containerization:** Architecting Docker and Kubernetes environments with a focus on node isolation and resource optimization.
+- **CI/CD Security (Shift-Left):** Integrating automated vulnerability scanning (Semgrep) and secret detection (Gitleaks) into the immutable deployment lifecycle.
+- **Zero-Trust Network Perimeters:** Designing **Dark Host** architectures and secure tunnels (Cloudflare) to eliminate the attack surface of administrative interfaces.
+- **Containerization:** Architecting Docker-based monorepos (Turborepo) with a focus on resource optimization and isolation.
 
 ## 3. Information Security & Compliance
 Expertise in protecting corporate assets and ensuring regulatory alignment.
