@@ -29,7 +29,14 @@ Building robust applications that scale without compromising speed or security.
 - **API Architecture:** Designing high-throughput, Edge-compatible APIs using Hono and TypeScript.
 - **Multi-Tenant Databases:** Specialized in Row Level Security (RLS) to ensure absolute data privacy in SaaS environments.
 
-## 5. Advanced System Remediation & Engineering
+## 5. Technical Implementation Strategy (The "How")
+I focus on building systems that are not just functional, but architecturally sound and secure by design.
+- **Automated Data Isolation:** Implementing Prisma middleware and PostgreSQL RLS to prevent cross-tenant data leaks—a critical requirement for SaaS governance.
+- **RAG & Agentic Orchestration:** Utilizing LangChain to create autonomous agents that use semantic search (pgvector) to interact with structured and unstructured business data.
+- **Immutable Infrastructure:** Using Docker and Turborepo to create consistent, reproducible environments that eliminate "it works on my machine" issues.
+- **High-Velocity Security:** Integrating Semgrep and Gitleaks into CI/CD to detect vulnerabilities and exposed secrets before they reach the main branch.
+
+## 6. Advanced System Remediation & Engineering
 Solving the "unsolvable" failures at the intersection of OS and Network.
 - **Root Cause Analysis (RCA):** Deep expertise in diagnosing complex system failures involving D-Bus protocols, NetworkManager, and Netplan in containerized environments.
 - **Linux Kernel & Socket Engineering:** Fixing race conditions and binding issues using advanced systemd unit overrides and FreeBind configurations.
