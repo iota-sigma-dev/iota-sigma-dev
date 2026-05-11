@@ -9,9 +9,9 @@
 
 I am a Cybersecurity specialist and Systems Engineer with over 15 years of experience building and securing complex IT ecosystems. My current focus lies at the intersection of **Agentic AI Governance** and **DevSecOps**, where I orchestrate hybrid environments (Humans + Autonomous Agents) with a strict "Security-First" approach.
 
-- **🛡️ InfoSec:** Top 5% Rank on **Hack The Box**. Expertise in IAM, Threat Modeling, and Compliance (NIST 800-53, ISO 27001).
-- **🤖 Agentic AI:** Specialist in designing governed LLM-powered agents (LangChain, RAG) for enterprise-grade automation.
-- **🏗️ DevOps:** Architecting immutable CI/CD pipelines, containerized orchestration (Docker/K8s), and multi-tenant cloud infrastructures.
+- **🛡️ InfoSec & Hardening:** Top 5% Rank on **Hack The Box**. Expert in **Linux Kernel Hardening**, **RBAC/ACL** architecture, and **IDS/IPS** orchestration (CrowdSec, Fail2Ban).
+- **🤖 Agentic AI Governance:** Specialist in designing secure, governed LLM-powered agents (LangChain, RAG) with robust audit trails.
+- **🏗️ DevSecOps & Networking:** Architecting immutable CI/CD pipelines and complex networking resolutions (Netplan, systemd-networkd, Cloudflare Zero Trust).
 
 ---
 
@@ -25,6 +25,17 @@ OrderKill (v4.5.3 Golden State) is a multi-tenant platform for the retail and fo
 - **🧠 CoWorker AI Engine:** An autonomous agent layer powered by **LangChain** and **pgvector**, capable of real-time inventory management and contextual business logic.
 - **🛠️ DevSecOps Pipeline:** Full "Shift-Left" security integration using **Semgrep** and **Gitleaks** within a **Turborepo** monorepo structure.
 - **⚡ Modern Stack:** Built on **Next.js 16**, **React 19**, **Hono API**, and **PostgreSQL**, optimized for Edge compatibility and high concurrency.
+
+---
+
+## 🔬 Technical Deep Dives & Security Hardening
+
+Beyond standard development, I specialize in resolving complex architectural failures and implementing high-level security controls:
+
+- **Advanced System Remediation:** Solved critical race conditions in **systemd** sockets and complex **NetworkManager/Netplan** integration issues to ensure 100% uptime for administrative interfaces.
+- **IDS/IPS Orchestration:** Implemented and tuned **CrowdSec** security engines, developing custom detection scenarios for HTTP-CVEs and multi-port scanning defense.
+- **Enterprise RBAC & ACLs:** Designed granular access control systems using **POSIX ACLs** and specialized **Sudoers** whitelisting to enforce the principle of least privilege in production environments.
+- **Zero-Trust Perimeter:** Secured administrative panels (Cockpit, SSH) using **Cloudflare Zero Trust** tunnels, moving away from vulnerable public-facing ports.
 
 ---
 

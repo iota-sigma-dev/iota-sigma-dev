@@ -29,6 +29,12 @@ Building robust applications that scale without compromising speed or security.
 - **API Architecture:** Designing high-throughput, Edge-compatible APIs using Hono and TypeScript.
 - **Multi-Tenant Databases:** Specialized in Row Level Security (RLS) to ensure absolute data privacy in SaaS environments.
 
+## 5. Advanced System Remediation & Engineering
+Solving the "unsolvable" failures at the intersection of OS and Network.
+- **Root Cause Analysis (RCA):** Deep expertise in diagnosing complex system failures involving D-Bus protocols, NetworkManager, and Netplan in containerized environments.
+- **Linux Kernel & Socket Engineering:** Fixing race conditions and binding issues using advanced systemd unit overrides and FreeBind configurations.
+- **IDS Optimization:** Designing and deploying custom CrowdSec collections to protect against modern CVEs and automated botnet traffic.
+
 ---
 
 ## Why Choose My Expertise?
