@@ -65,6 +65,7 @@ Beyond standard development, I specialize in resolving complex architectural fai
 
 My career is backed by global roles at industry leaders where I led critical IT security projects and infrastructure migrations:
 
+- **GlobalLogic:** Senior Software Engineer in **Threat Informed Defense** for **Coalfire** (USA). Focus on operationalizing threat intelligence and implementing advanced defense strategies.
 - **General Motors:** Technical Security Consultant (IAM, Audit, Compliance).
 - **Hewlett Packard / EDS:** System Analyst & IAM Specialist (SOX Compliance, UNIX/Linux Security).
 - **Independent Consultant:** InfoSec Architect and Cybersecurity Advisor.
