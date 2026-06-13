@@ -67,14 +67,28 @@ Para cumplir con estándares de SRE, la observabilidad es determinística y guia
 
 ## 🛡 Seguridad, Zero-Trust y Hardening Perimetral (L2 / L3)
 
-La postura de DevSecOps asume un entorno hostil. Se erradicó la exposición L4 tradicional mediante **Zero Binding**.
+La postura de DevSecOps asume un entorno hostil. Se erradicó la exposición L4 tradicional mediante una arquitectura de **Zero Binding** y mitigaciones a nivel de kernel, priorizando la estabilidad de los sockets de red subyacentes.
 
-1. **Aislamiento de Red y UFW (Default Deny):** El firewall cierra todos los puertos de entrada, *incluyendo el puerto 22 (SSH)*. 
-2. **Tunneling Zero Trust:** El servicio SSH se enruta a través del túnel `cloudflared`. El demonio local de SSH (`sshd_config`) se restringe para escuchar únicamente en las interfaces locales/docker (`ListenAddress 127.0.0.1`, `ListenAddress 172.18.0.1`), anulando escaneos masivos en internet.
-3. **Control de Accesos (RBAC):** Se implementó segregación de privilegios (Least Privilege) creando usuarios dedicados (`ops_institution`) con ACLs (`setfacl`) que solo permiten lecturas limitadas y comandos sudo muy granulares en `/etc/sudoers.d/`, protegiendo los datos confidenciales de n8n.
-4. **IDS/IPS Ligero (CrowdSec):** Ante limitaciones de vCores, descarté Elastic/Wazuh. Instalé CrowdSec y Fail2Ban operando a nivel de kernel (`iptables`), bloqueando ataques a nivel L3 con consumo nulo de CPU.
-5. **Autenticación 2FA Granular:** Las consolas de admin de n8n y Chatwoot están protegidas por políticas de `One-Time PIN` en Cloudflare Access. Se diseñaron reglas de *Bypass* exclusivamente para las rutas de webhooks (`/webhooks/*`, `/api/*`).
-6. **Kill Switch Lógico en Ingesta (L2):** A nivel de aplicación, el webhook inicial de enrutamiento evalúa banderas en la metadata de la sesión de Chatwoot. Si se detecta la bandera `apagar_bot: true`, el pipeline cierra la conexión instantáneamente y drena el evento sin procesarlo, ahorrando ciclos de cómputo y evitando respuestas automáticas en sesiones gestionadas por humanos.
+### 1. Advanced Networking y Resolución de Race Conditions (L2/L3)
+Durante la orquestación del ecosistema, se detectaron fallos asíncronos en el stack de red (`systemd-networkd` vs `NetworkManager`) que afectaban la inicialización de sockets en el bridge de Docker (`172.18.0.1`).
+- **NetworkManager Override:** Se migró el renderer de Netplan hacia `NetworkManager`, inyectando la configuración global `unmanaged-devices=interface-name:docker*;interface-name:br-*;interface-name:veth*` en `/etc/NetworkManager/conf.d/10-unmanaged.conf` para evitar la usurpación de interfaces efímeras de Docker.
+- **Systemd FreeBind Sockets:** Para asegurar que los paneles administrativos internos sobrevivan a reinicios sin intervención manual y prevengan el error `Cannot assign requested address`, se implementaron *unit overrides* en systemd activando la directiva `FreeBind=yes`. Esto permite la vinculación del socket antes de que la interfaz virtual esté disponible en el núcleo (Kernel).
+
+### 2. Aislamiento de Red y Tunneling Zero-Trust (L3)
+- **UFW Default Deny:** El firewall descarta todo tráfico entrante en L3/L4, cerrando incluso el puerto 22 (SSH).
+- **Cloudflare Ingress Tunneling:** La totalidad del tráfico administrativo (SSH, Consolas Web) fluye a través de un daemon de `cloudflared`. A nivel de SSH, el demonio `sshd_config` opera en un entorno blindado escuchando únicamente en `ListenAddress 127.0.0.1` y `ListenAddress 172.18.0.1`.
+- **Identity Provider (IdP):** El acceso de administración está protegido por Cloudflare Access (One-Time PIN 2FA) a nivel L7, empleando reglas de exclusión (`Bypass`) puramente algorítmicas para asegurar la ingesta ininterrumpida de los webhooks de Meta Graph API (`/webhooks/*`).
+
+### 3. Orquestación IDS/IPS a Nivel Kernel (L2)
+Para eludir la sobrecarga de CPU de agentes tipo Wazuh o Elastic en la VPS, se desplegó **CrowdSec** operando directamente sobre el Netfilter del kernel Linux.
+- **Colecciones Granulares:** Se instalaron parseadores especializados (`crowdsecurity/iptables`, `crowdsecurity/base-http-scenarios`, `crowdsecurity/http-cve`) que leen métricas en tiempo real de `/var/log/syslog` y `/var/log/kern.log`.
+- **Mitigación L3/L7 Integrada:** Cualquier escaneo agresivo (Probing, SQLi, Path Traversal) es detectado y volcado al Bouncer (`iptables-scan-multi_ports`), ejecutando un bloqueo automático de la IP en la tabla de ruteo y alimentando la inteligencia comunitaria CAPI de forma simultánea.
+
+### 4. Control de Accesos y Segregación (RBAC)
+Se implementó segregación de privilegios (Least Privilege) creando el usuario de orquestación `ops_institution` regido por ACLs POSIX (`setfacl`), limitando lecturas y restringiendo su capacidad de escalado mediante comandos sudoers estrictos ubicados en `/etc/sudoers.d/`.
+
+### 5. Kill Switch Lógico en Ingesta (L2)
+A nivel de aplicación, el webhook inicial de enrutamiento evalúa banderas en la metadata de la sesión de Chatwoot. Si se detecta la bandera `apagar_bot: true`, el pipeline cierra la conexión instantáneamente y drena el evento sin procesarlo, ahorrando ciclos de cómputo y evitando respuestas automáticas en sesiones gestionadas por humanos.
    ```json
    {
      "conditions": {
