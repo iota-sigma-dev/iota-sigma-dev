@@ -13,6 +13,32 @@
 
 ---
 
+## 🚀 Featured Architecture & Ecosystems
+
+The following portfolios represent production-grade ecosystems engineered from the ground up, demonstrating end-to-end mastery in DevSecOps, Autonomous Agents, and High-Performance Software Architecture:
+
+### 1. [OrderKill Ecosystem](./Orderkill/Orderkill.md)
+**High-Performance B2B SaaS | LangChain CoWorker | OPEX $0**
+A multi-tenant platform for the retail/food industry serving as a benchmark for modern, secure, and AI-augmented software development.
+- **Highlights:** Row Level Security (RLS) via Prisma, LangChain CoWorker with HITL governance, Shift-Left Security (Semgrep/Gitleaks), Next.js 15 (Canary) + Hono Edge APIs.
+
+### 2. [DiveSync Ecosystem](./DiveSync/DiveSync.md)
+**Scuba Operations SaaS | Predictive Autoscaler | Zero-Trust Networks**
+A mission-critical SaaS for scuba diving centers, completely eradicating MVC/OOP in favor of a functional, Zero-Client-State paradigm.
+- **Highlights:** Smart Rebuild Orchestrator (`rebuild.sh`), Python Watchdog for Predictive Autoscaling, Multi-Tenant RAG (pgvector HNSW), Nginx Dual-Network Topologies.
+
+### 3. [Striker Pentest Framework](./Striker_Custom_Pentest_FrmWrk/Striker.md)
+**Modular TUI Orchestrator | AsyncIO | Red Team OPSEC**
+A high-performance, asynchronous pentesting orchestrator built for stealth engagements and Red Team operations, automating intelligence gathering.
+- **Highlights:** Strict HITL Exploitation protocol, SQLite WAL transactional persistence, WAF Monitor & Kill-Switch for active evasion, dynamic Wordlist Routing.
+
+### 4. [AFOLAP / Bot_Cocina](./BOT_Cocina/BotCocina.md)
+**Autonomous Gastronomy Agents | n8n RAG | WAF Evasion**
+An autonomous AI workforce for gastronomy management, bridging WhatsApp interfaces with complex background business logic.
+- **Highlights:** Cloudflare Zero-Trust WAF, Docker Swarm multi-layer architecture, Advanced RAG via n8n & Qdrant vector spaces, Agentic fallback protocols.
+
+---
+
 ## 🏆 Top 10 Professional Certifications
 
 A curated selection of technical validations supporting my multi-disciplinary expertise:
@@ -33,28 +59,15 @@ A curated selection of technical validations supporting my multi-disciplinary ex
 
 ---
 
-## 🚀 Featured Project: OrderKill Ecosystem
-**High-Performance B2B SaaS | Built in 33 Days**
+## 🏗️ Technical Strategy (The "How")
 
-OrderKill (v4.5.3 Golden State) is a multi-tenant platform for the retail and food industry, serving as a benchmark for modern, secure, and AI-augmented software development.
+My ecosystems are engineered for extreme scalability and security through a modular, automated approach:
 
-### Technical Highlights:
-- **🔒 Advanced Multi-Tenancy:** Implemented **Row Level Security (RLS)** via Prisma extensions, ensuring cryptographic data isolation and logical segregation in a shared database environment.
-- **🧠 CoWorker AI Engine:** An autonomous agent layer with **HITL governance**, powered by **LangChain** and **pgvector** for real-time inventory and business logic automation.
-- **🛠️ DevSecOps Pipeline:** Full "Shift-Left" integration with **Semgrep** and **Gitleaks**. Identity management via **@orderkill/security** using Edge-compatible JWT/JWE.
-- **⚡ Modern Stack:** Built on **Next.js 15 (Canary)**, **React 19**, and **Hono**, featuring the premium **"Stitch"** visual identity for a state-of-the-art user experience.
-
----
-
-## 🏗️ How I Implemented the Stack (Technical Strategy)
-
-The **OrderKill** ecosystem was engineered for extreme scalability and security through a modular, automated approach:
-
-- **Monorepo Orchestration:** Implemented a **Turborepo** structure to manage multiple high-concurrency apps (Customer Portal, Admin Dashboard, Edge API) while maintaining shared logic through internal packages (`@orderkill/security`, `@orderkill/db`).
-- **Automated Multi-Tenancy:** Engineered a robust isolation layer using **Prisma Client Extensions**. This automatically injects `tenantId` context into every database operation, reinforced by **PostgreSQL Row Level Security (RLS)** for absolute data segregation.
-- **Agentic AI Integration:** Built the "CoWorker" assistant using **LangChain** for complex tool-calling orchestration and **pgvector** for semantic search. This allows the AI to perform Retrieval-Augmented Generation (RAG) on specific tenant inventory and rules.
-- **Shift-Left Security:** Hardened the development lifecycle by integrating **Semgrep** and **Gitleaks** directly into the CI pipeline, ensuring no vulnerability or secret reaches production.
-- **Edge-Ready Performance:** Utilized **Hono** and **Jose** (JWT/JWE) to ensure the authentication and API layers are compatible with global Edge runtimes (Cloudflare Workers / Vercel Edge).
+- **Monorepo Orchestration:** Implementing **Turborepo** to manage high-concurrency apps while maintaining shared logic through internal packages.
+- **Automated Multi-Tenancy:** Robust isolation layers using **Prisma Client Extensions**, injecting `tenantId` context into every DB operation, reinforced by **PostgreSQL RLS**.
+- **Agentic AI Integration:** Building AI assistants using **LangChain** and **n8n** for complex tool-calling and **pgvector/Qdrant** for semantic search.
+- **Shift-Left Security:** Hardening SDLC by integrating **Semgrep** and **Gitleaks** directly into CI pipelines.
+- **Edge-Ready Performance:** Utilizing **Hono** and **Jose** (JWT/JWE) ensuring AuthN/AuthZ layers are compatible with global Edge runtimes.
 
 ---
 
@@ -62,10 +75,10 @@ The **OrderKill** ecosystem was engineered for extreme scalability and security 
 
 Beyond standard development, I specialize in resolving complex architectural failures and implementing high-level security controls:
 
-- **Advanced System Remediation:** Solved critical race conditions in **systemd** sockets and complex **NetworkManager/Netplan** integration issues to ensure 100% uptime for administrative interfaces.
-- **IDS/IPS Orchestration:** Implemented and tuned **CrowdSec** security engines, developing custom detection scenarios for HTTP-CVEs and multi-port scanning defense.
-- **Enterprise RBAC & ACLs:** Designed granular access control systems using **POSIX ACLs** and specialized **Sudoers** whitelisting to enforce the principle of least privilege in production environments.
-- **Zero-Trust Perimeter:** Secured administrative panels (Cockpit, SSH) using **Cloudflare Zero Trust** tunnels, moving away from vulnerable public-facing ports.
+- **Advanced System Remediation:** Solved critical race conditions in **systemd** sockets and complex **NetworkManager/Netplan** integration issues.
+- **IDS/IPS Orchestration:** Implemented and tuned **CrowdSec** security engines, developing custom detection scenarios for HTTP-CVEs and botnets.
+- **Enterprise RBAC & ACLs:** Designed granular access control using **POSIX ACLs** and specialized **Sudoers** whitelisting.
+- **Zero-Trust Perimeter:** Secured administrative panels using **Cloudflare Zero Trust** tunnels, eradicating vulnerable public-facing ports.
 
 ---
 
@@ -73,10 +86,10 @@ Beyond standard development, I specialize in resolving complex architectural fai
 
 | Domain | Tools & Technologies |
 | :--- | :--- |
-| **Artificial Intelligence** | LangChain, RAG Engines, Vector Databases (pgvector), Anthropic/OpenAI/Ollama |
-| **Security & InfoSec** | IAM, JWT/JWE (Jose), Semgrep, Gitleaks, Ethical Hacking (HTB), Burp Suite, ZAP |
+| **Artificial Intelligence** | LangChain, n8n, RAG Engines, Vector DBs (pgvector, Qdrant), Anthropic/OpenAI |
+| **Security & InfoSec** | IAM, JWT/JWE (Jose), Semgrep, Gitleaks, Ethical Hacking (HTB), Burp Suite |
 | **Infrastructure / DevOps** | Docker, Turborepo, PNPM, NGINX, Redis, PgBouncer, Terraform, Bash/Python |
-| **Fullstack Development** | Next.js 15 (App Router), React 19, TypeScript 5.7, Prisma ORM, Hono, Zustand |
+| **Fullstack Development** | Next.js 15/16 (App Router), React 19, TypeScript 5.7, Prisma ORM, Hono |
 | **Compliance** | ISO/IEC 27001, NIST CSF, HIPAA, GDPR, CCPA |
 
 ---
@@ -85,7 +98,7 @@ Beyond standard development, I specialize in resolving complex architectural fai
 
 My career is backed by global roles at industry leaders where I led critical IT security projects and infrastructure migrations:
 
-- **GlobalLogic:** Senior Software Engineer in **Threat Informed Defense** for **Coalfire** (USA). Focus on operationalizing threat intelligence and implementing advanced defense strategies.
+- **GlobalLogic:** Senior Software Engineer in **Threat Informed Defense** for **Coalfire** (USA).
 - **General Motors:** Technical Security Consultant (IAM, Audit, Compliance).
 - **Hewlett Packard / EDS:** System Analyst & IAM Specialist (SOX Compliance, UNIX/Linux Security).
 - **Independent Consultant:** InfoSec Architect and Cybersecurity Advisor.
