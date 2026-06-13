@@ -6,7 +6,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
         @page {
-            size: A4;
+            size: 210mm 500mm; /* Extra tall single continuous page */
             margin: 0;
         }
         
@@ -127,6 +127,7 @@
         /* Experience Items */
         .job {
             margin-bottom: 20px;
+            page-break-inside: avoid;
         }
 
         .job-header {
@@ -173,6 +174,7 @@
             padding: 10px 15px;
             border-radius: 6px;
             border-left: 3px solid #0ea5e9;
+            page-break-inside: avoid;
         }
         
         .projects-grid div {
@@ -189,6 +191,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
+            page-break-inside: avoid;
         }
 
         /* Footer block */
@@ -284,9 +287,9 @@
                 <span class="job-date">2013 &ndash; 2015</span>
             </div>
             <ul>
-                <li>Managed Identity and Access Management (IAM), internal audits, and compliance implementations.</li>
-                <li>Administered mission-critical Windows and Linux servers, specializing in LDAP and Active Directory security.</li>
-                <li>Participated directly in the implementation and auditing of ISO 27001 and NIST 800-53 security frameworks across global operations.</li>
+                <li>Managed global Identity and Access Management (IAM) lifecycles, significantly reducing unauthorized access incidents and ensuring strict compliance with internal security policies.</li>
+                <li>Administered mission-critical Windows and Linux server infrastructures, specializing in LDAP integration, Active Directory hardening, and Group Policy Object (GPO) deployment.</li>
+                <li>Participated directly in the strategic implementation and internal auditing of ISO 27001 and NIST 800-53 security frameworks across global manufacturing and corporate operations.</li>
             </ul>
         </div>
 
@@ -297,8 +300,9 @@
                 <span class="job-date">2009 &ndash; 2013</span>
             </div>
             <ul>
-                <li>Managed security and access audits, and strict compliance enforcement in heterogeneous UNIX/Linux and Microsoft environments.</li>
-                <li>Provided tier-3 support for critical server management under SOX and other regulatory standards.</li>
+                <li>Managed complex security access controls, system audits, and strict compliance enforcement in heterogeneous, large-scale UNIX/Linux (Solaris, HP-UX, AIX) and Microsoft enterprise environments.</li>
+                <li>Provided tier-3 engineering support for critical server operations, ensuring 99.9% uptime and adherence to SOX (Sarbanes-Oxley) and other stringent regulatory standards.</li>
+                <li>Streamlined user provisioning processes and conducted regular vulnerability assessments to maintain robust infrastructure integrity.</li>
             </ul>
         </div>
 
@@ -309,7 +313,8 @@
                 <span class="job-date">2007 &ndash; 2008</span>
             </div>
             <ul>
-                <li>Managed remote servers, network configuration, and technical support for real estate management software.</li>
+                <li>Managed remote Linux and Windows servers, optimized network configurations, and provided advanced technical support for proprietary real estate management software.</li>
+                <li>Implemented automated backup solutions and enhanced system monitoring to ensure data availability and rapid incident response.</li>
             </ul>
         </div>
 
@@ -320,7 +325,8 @@
                 <span class="job-date">2007</span>
             </div>
             <ul>
-                <li>Installed IT infrastructure and provided technical support in a contact center environment.</li>
+                <li>Engineered and installed the core IT infrastructure for a high-volume contact center, including VoIP systems, structured cabling, and network routing.</li>
+                <li>Delivered Tier-2 technical support, minimizing agent downtime and optimizing overall network performance.</li>
             </ul>
         </div>
 
