@@ -32,10 +32,20 @@ A mission-critical SaaS for scuba diving centers, completely eradicating MVC/OOP
 A high-performance, asynchronous pentesting orchestrator built for stealth engagements and Red Team operations, automating intelligence gathering.
 - **Highlights:** Strict HITL Exploitation protocol, SQLite WAL transactional persistence, WAF Monitor & Kill-Switch for active evasion, dynamic Wordlist Routing.
 
-### 4. [AFOLAP / Bot_Cocina](./BOT_Cocina/BotCocina.md)
-**Autonomous Gastronomy Agents | n8n RAG | WAF Evasion**
-An autonomous AI workforce for gastronomy management, bridging WhatsApp interfaces with complex background business logic.
+### 4. [Autonomous Academic Ecosystem](./BOT_Academico/BotAcademico.md)
+**Educational Agentic Architecture | n8n RAG | Event-Driven**
+An autonomous AI workforce for academic institutions, managing complex scheduling, inquiries, and student interactions.
 - **Highlights:** Cloudflare Zero-Trust WAF, Docker Swarm multi-layer architecture, Advanced RAG via n8n & Qdrant vector spaces, Agentic fallback protocols.
+
+### 5. [Barbarroja / Bot_Cocina](./BOT_Cocina/BotCocina.md)
+**Gastronomy AI Assistants | WhatsApp Orchestration | RAG**
+An autonomous AI workforce for gastronomy management, bridging WhatsApp interfaces with complex background business logic.
+- **Highlights:** Specialized LLM Prompts for order taking, n8n webhook event processing, structured JSON extraction from natural language.
+
+### 6. [Casado_Prop / Bot_Inmobiliario](./BOT_Inmobiliario/BotInmobiliario.md)
+**Real Estate Autonomous Agents | Property Matching | CRM Integration**
+An AI-driven real estate assistant that automates property inquiries, client profiling, and intelligent property matching.
+- **Highlights:** Semantic search for properties using vector databases, conversational lead qualification, dynamic CRM data synchronization.
 
 ---
 

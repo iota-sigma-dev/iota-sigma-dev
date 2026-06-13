@@ -8,7 +8,7 @@ This document outlines the specific capabilities and professional services provi
 ## 1. Agentic AI Governance & Implementation
 I help organizations bridge the gap between AI experimentation and production-ready, secure autonomous systems.
 - **Secure Agent Architectures:** Designing LLM-powered agents with strict guardrails and **HITL (Human-in-the-Loop)** governance to prevent prompt injection and data leakage, as demonstrated in the [Striker Pentest Framework](./Striker_Custom_Pentest_FrmWrk/Striker.md).
-- **RAG Ecosystems:** Implementing Retrieval-Augmented Generation using vector databases (pgvector/Qdrant) for context-aware automation in multi-tenant environments, evidenced by [AFOLAP / Bot_Cocina](./BOT_Cocina/BotCocina.md).
+- **RAG Ecosystems:** Implementing Retrieval-Augmented Generation using vector databases (pgvector/Qdrant) for context-aware automation in multi-tenant environments, evidenced by the [Autonomous Academic Ecosystem](./BOT_Academico/BotAcademico.md) and [Barbarroja](./BOT_Cocina/BotCocina.md).
 - **Orchestration:** Expert use of LangChain and custom autonomous engines for enterprise-grade workflow automation, highlighted in the [OrderKill Ecosystem](./Orderkill/Orderkill.md).
 
 ## 2. DevSecOps & Modern Infrastructure
