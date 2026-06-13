@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2d3748;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            -webkit-print-color-adjust: exact;
+        }
+
+        /* Header block */
+        .header {
+            background-color: #0f172a; /* Slate 900 */
+            color: #f8fafc;
+            padding: 40px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-info {
+            max-width: 70%;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+        }
+
+        .header h2 {
+            font-size: 16px;
+            font-weight: 500;
+            color: #38bdf8; /* Sky 400 */
+            margin: 0 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-contact {
+            font-size: 12px;
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        .header-contact a {
+            color: #7dd3fc;
+            text-decoration: none;
+        }
+
+        .header-photo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #334155;
+            object-fit: cover;
+            background-color: #e2e8f0;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 30px 50px;
+            flex: 1;
+        }
+
+        /* Section Titles */
+        h3.section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0f172a;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            font-size: 13px;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        /* Skills Chips */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 15px;
+        }
+
+        .skill-chip {
+            background-color: #f1f5f9;
+            color: #334155;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .skill-chip.highlight {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            border-color: #bae6fd;
+        }
+
+        /* Experience Items */
+        .job {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .job-company {
+            font-size: 13px;
+            font-weight: 600;
+            color: #64748b;
+        }
+
+        .job-date {
+            font-size: 12px;
+            font-weight: 500;
+            color: #94a3b8;
+        }
+
+        .job ul {
+            padding-left: 18px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .job li {
+            font-size: 12px;
+            margin-bottom: 6px;
+            color: #334155;
+        }
+
+        /* Projects List */
+        .projects-grid {
+            margin-top: 8px;
+            background-color: #f8fafc;
+            padding: 10px 15px;
+            border-radius: 6px;
+            border-left: 3px solid #0ea5e9;
+        }
+        
+        .projects-grid div {
+            font-size: 11.5px;
+            margin-bottom: 4px;
+        }
+        
+        .projects-grid strong {
+            color: #0f172a;
+        }
+
+        /* Two columns for bottom */
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        /* Footer block */
+        .footer {
+            background-color: #f8fafc;
+            padding: 20px 50px;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            margin-top: auto;
+        }
+
+        .footer .motto {
+            font-size: 11px;
+            font-style: italic;
+            color: #64748b;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-info">
+            <h1>José Ignacio Carpanzano</h1>
+            <h2>Technical Project Manager | DevSecOps & AI Architect</h2>
+            <div class="header-contact">
+                Río Cuarto, Córdoba, AR &bull; +54 9 358 5484876 &bull; CARPANZANOJOSE@GMAIL.COM<br>
+                GitHub: <a href="https://github.com/iota-sigma-dev">iota-sigma-dev</a> &bull; LinkedIn: <a href="https://www.linkedin.com/in/jose-i-carpanzano">jose-i-carpanzano</a>
+            </div>
+        </div>
+        <!-- Embedded Base64 Image -->
+        <img class="header-photo" src="data:image/jpeg;base64,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" alt="Photo">
+    </div>
+
+    <div class="content">
+        <p>Cybersecurity Architect and Technical Project Manager with over 15 years of experience in high-stakes environments. Transitioned from traditional InfoSec into <strong>AI-Augmented SDLC Architecture</strong> and <strong>DevSecOps</strong>. Proven expertise in engineering Zero-Trust network perimeters, orchestrating immutable infrastructures, and deploying autonomous AI-driven ecosystems. I specialize in scaling security without blocking business agility, blending offensive intelligence with robust architectural defense.</p>
+
+        <h3 class="section-title">Core Competencies & Skills</h3>
+        <div class="skills-container">
+            <!-- Modern DevSecOps & AI -->
+            <span class="skill-chip highlight">LangChain & n8n</span>
+            <span class="skill-chip highlight">DevSecOps & Shift-Left</span>
+            <span class="skill-chip highlight">Cloudflare Zero-Trust</span>
+            <span class="skill-chip highlight">CrowdSec IDS/IPS</span>
+            <span class="skill-chip highlight">Docker Swarm & Kubernetes</span>
+            <span class="skill-chip highlight">Next.js 15 & Hono</span>
+            <span class="skill-chip highlight">Qdrant & pgvector</span>
+            <span class="skill-chip highlight">Prisma RLS</span>
+            <!-- Infrastructure & Cloud -->
+            <span class="skill-chip">AWS & Azure</span>
+            <span class="skill-chip">Terraform</span>
+            <span class="skill-chip">Linux (Solaris, HP-UX, AIX)</span>
+            <span class="skill-chip">Windows Server & Active Directory</span>
+            <!-- Security & Offensive -->
+            <span class="skill-chip">Ethical Hacking / HTB</span>
+            <span class="skill-chip">ZAP Proxy & Burp Suite</span>
+            <span class="skill-chip">Forensic Computing</span>
+            <span class="skill-chip">IAM & OAuth</span>
+            <!-- Development -->
+            <span class="skill-chip">Python / Bash / C++ / PHP</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">Semgrep & Gitleaks</span>
+            <!-- Compliance -->
+            <span class="skill-chip">ISO 27001 & NIST 800-53</span>
+            <span class="skill-chip">HIPAA, CCPA, GDPR</span>
+        </div>
+
+        <h3 class="section-title">Professional Experience</h3>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">DevSecOps Architect & INFOSEC Specialist (Independent)</span>
+                <span class="job-date">2017 &ndash; Present</span>
+            </div>
+            <p>Evolved from Information Security consulting to full-stack infrastructure engineering, orchestrating complex, agent-driven SaaS platforms and enforcing Zero-Trust governance.</p>
+            <ul>
+                <li>Engineered autonomous AI-driven ecosystems utilizing <strong>LangChain</strong> and <strong>n8n</strong>, integrating vector databases for semantic search and Retrieval-Augmented Generation (RAG).</li>
+                <li>Architected immutable CI/CD pipelines with integrated Shift-Left security (Semgrep, Gitleaks) and orchestrated container deployments via Docker Swarm and Turborepo.</li>
+                <li>Designed Zero-Trust perimeters using Cloudflare Tunnels, resolving complex Linux kernel network race conditions (Systemd FreeBind), and deploying <strong>CrowdSec</strong> for kernel-level L7 mitigation.</li>
+                <li>Conducted security assessments, vulnerability management, and regulatory compliance consulting (ISO 27001, NIST) for various enterprise clients.</li>
+            </ul>
+            <div class="projects-grid">
+                <div><strong>OrderKill:</strong> High-Performance B2B SaaS | LangChain CoWorker</div>
+                <div><strong>DiveSync:</strong> Scuba Operations SaaS | Predictive Autoscaler | Zero-Trust</div>
+                <div><strong>Striker:</strong> Modular Pentest TUI Orchestrator | AsyncIO | Red Team OPSEC</div>
+                <div><strong>Autonomous Ecosystems:</strong> Academic / Barbarroja / Casado_Prop | n8n RAG Architecture</div>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Technical Security Consultant</span>
+                <span class="job-company">General Motors</span>
+                <span class="job-date">2013 &ndash; 2015</span>
+            </div>
+            <ul>
+                <li>Managed Identity and Access Management (IAM), internal audits, and compliance implementations.</li>
+                <li>Administered mission-critical Windows and Linux servers, specializing in LDAP and Active Directory security.</li>
+                <li>Participated directly in the implementation and auditing of ISO 27001 and NIST 800-53 security frameworks across global operations.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">System Analyst and Technical IAM Consultant</span>
+                <span class="job-company">Hewlett Packard / Electronic Data Systems</span>
+                <span class="job-date">2009 &ndash; 2013</span>
+            </div>
+            <ul>
+                <li>Managed security and access audits, and strict compliance enforcement in heterogeneous UNIX/Linux and Microsoft environments.</li>
+                <li>Provided tier-3 support for critical server management under SOX and other regulatory standards.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Technical Support</span>
+                <span class="job-company">Net Desarrollos</span>
+                <span class="job-date">2007 &ndash; 2008</span>
+            </div>
+            <ul>
+                <li>Managed remote servers, network configuration, and technical support for real estate management software.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">IT Infrastructure Supervisor</span>
+                <span class="job-company">Arquinec-Southlat</span>
+                <span class="job-date">2007</span>
+            </div>
+            <ul>
+                <li>Installed IT infrastructure and provided technical support in a contact center environment.</li>
+            </ul>
+        </div>
+
+        <div class="bottom-grid">
+            <div>
+                <h3 class="section-title">Education</h3>
+                <ul style="padding-left: 15px;">
+                    <li><strong>Computer Engineering</strong> (Up to 4th year) <br> FCeFyN, U.N.C.</li>
+                    <li><strong>Specialization in Cybersecurity</strong> <br> Educación IT (283 hours)</li>
+                    <li><strong>Diploma in Electronics & Electrician</strong> <br> Aeronautical Orientation</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="section-title">Key Certifications</h3>
+                <ul style="padding-left: 15px;">
+                    <li><strong>Hack The Box:</strong> Top 5% Global (119 targets)</li>
+                    <li><strong>Educación IT:</strong> IT Security Specialist, Ethical Hacker</li>
+                    <li><strong>Microsoft:</strong> Certified Professional (MCP)</li>
+                    <li><strong>Security Blue Team:</strong> Vulnerability Mgmt, OSINT</li>
+                    <li><strong>Maltego & Basel Institute:</strong> Cybercrime & OSINT</li>
+                    <li><strong>arcX:</strong> Cyber Threat Intelligence Analyst</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="motto">"Securing the evolution of autonomous systems through robust governance, immutable infrastructure, and high-performance engineering."</div>
+    </div>
+</body>
+</html>
