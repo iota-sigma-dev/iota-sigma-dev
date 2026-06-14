@@ -7,7 +7,7 @@
 
 ## 🎯 Profile Overview
 
-- **🛡️ InfoSec & Hardening:** Top 5% Rank on **Hack The Box** ([View Profile](https://app.hackthebox.com/users/iota-sigma-dev)). Expert in **Linux Kernel Hardening**, **RBAC/ACL** architecture, and **IDS/IPS** orchestration. Specialist in **Dark Host** infrastructures for network obfuscation.
+- **🛡️ InfoSec & Hardening:** Top 5% Rank on **Hack The Box** ([View Profile]([https://app.hackthebox.com/users/iota-sigma-dev](https://profile.hackthebox.com/profile/019ec705-1c27-713a-8807-964e66e0606f))). Expert in **Linux Kernel Hardening**, **RBAC/ACL** architecture, and **IDS/IPS** orchestration. Specialist in **Dark Host** infrastructures for network obfuscation.
 - **🤖 Agentic AI Governance:** Architect of hybrid environments (Humans + Agents). Specialist in **HITL (Human-in-the-Loop)** orchestration and secure RAG deployment.
 - **🏗️ DevSecOps & Networking:** Orchestrating immutable CI/CD pipelines and **Zero-Trust Network** perimeters. expert in resolving L3-level networking and systemd race conditions.
 
