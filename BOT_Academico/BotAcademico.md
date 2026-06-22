@@ -1,6 +1,6 @@
-# 🎓 INSTITUTION Stack & Bot: Ecosistema Autónomo B2C
+# 🎓 INSTITUTION Stack & Bot: Ecosistema Autónomo B2C (Caso de Estudio GRC)
 
-INSTITUTION Bot no es un simple chatbot; es un ecosistema autónomo B2C de misión crítica diseñado para la atención, triaje y gestión académica. Su valor radica en la reducción total de carga operativa humana en Tier 1, implementando una arquitectura resiliente y un gobierno agéntico estricto. A continuación, la documentación técnica L2 (implementación) y L3 (arquitectura y riesgos) de las decisiones de ingeniería de este proyecto.
+INSTITUTION Bot no es un simple chatbot; es un ecosistema autónomo B2C de misión crítica diseñado para la atención, triaje y gestión académica. Este documento expone el proyecto como un caso de estudio integral que exhibe dominios avanzados de **GRC, InfoSec, CyberSec, Gestión de Riesgos (FAIR), Vulnerabilidades y Amenazas, Seguridad en LLMs (NIST AI RMF) y Gestión de Incidentes (IRP)**. Su valor radica en la reducción total de carga operativa humana en Tier 1, implementando una arquitectura resiliente y un gobierno agéntico estricto bajo el paradigma L2 (implementación técnica) y L3 (arquitectura, compliance y mitigación de riesgos).
 
 ## 🏗 Arquitectura y Topología (L3)
 
@@ -59,13 +59,13 @@ En lugar de depender de autoscalers pesados basados en Python, el HA de INSTITUT
   ```
   Adicionalmente, los mensajes que logran pasar el Lock se envían a una cola FIFO temporal (`Push to Buffer`) en Redis para luego ser consolidados (`Merge Messages`), lo que previene que ráfagas cortas de mensajes del mismo usuario levanten múltiples instancias del costoso Pipeline LLM.
 
-### Observabilidad Activa y Gestión Global de Excepciones (L2/L3)
-Para cumplir con estándares de SRE, la observabilidad es determinística y guiada por eventos. En n8n no hay *silent failures*; cualquier colapso delega en un *Global Error Handler* (`06_GLOBAL_Error_Handler.json`):
+### Gestión de Incidentes (Incident Response) y Observabilidad Activa (L2/L3)
+Para cumplir con estándares de SRE, la observabilidad es determinística y guiada por eventos. En n8n no hay *silent failures*; cualquier colapso delega en un *Global Error Handler* (`06_GLOBAL_Error_Handler.json`) que conforma el núcleo del Plan de Respuesta a Incidentes (IRP):
 1. **Trigger de Excepciones Nativas (`Error Trigger`):** Un nodo pasivo a nivel de instancia captura los *crashes* no controlados de cualquier workflow asociado.
-2. **Persistencia Analítica SQL:** Se inserta el volcado estructurado del error (Workflow ID, Nodo, Contexto y Stack Trace) directamente en la tabla relacional `bot_error_logs` en PostgreSQL para auditoría forense posterior.
-3. **Escalamiento Out-of-Band (SMTP):** De forma paralela y atómica, se emplea la API de Gmail (OAuth2) para disparar una alerta crítica asíncrona al equipo DevSecOps, minimizando el MTTA (*Mean Time To Acknowledge*) sin saturar las colas principales del orquestador cognitivo.
+2. **Persistencia Analítica SQL (Trazabilidad Forense):** Se inserta el volcado estructurado del error (Workflow ID, Nodo, Contexto y Stack Trace) directamente en la tabla relacional `bot_error_logs` en PostgreSQL para auditoría forense post-incidente.
+3. **Escalamiento Out-of-Band (SMTP):** De forma paralela y atómica, se emplea la API de Gmail (OAuth2) para disparar una alerta crítica asíncrona al equipo DevSecOps, minimizando drásticamente el MTTA (*Mean Time To Acknowledge*) sin saturar las colas principales del orquestador cognitivo.
 
-## 🛡 Seguridad, Zero-Trust y Hardening Perimetral (L2 / L3)
+## 🛡 CyberSec, InfoSec y Gestión de Vulnerabilidades/Amenazas (L2 / L3)
 
 La postura de DevSecOps asume un entorno hostil. Se erradicó la exposición L4 tradicional mediante una arquitectura de **Zero Binding** y mitigaciones a nivel de kernel, priorizando la estabilidad de los sockets de red subyacentes.
 
@@ -177,8 +177,8 @@ Este es el cerebro transaccional. Recibe el *query* consolidado desde el *Router
 
 El flujo de procesamiento de Lenguaje Natural en n8n no confía ciegamente en el input del usuario. Se diseñó un pipeline defensivo asimétrico.
 
-### WAF Semántico y Clasificador de Intenciones (L2/L3)
-Para prevenir el *Prompt Injection* y optimizar OPEX (no gastar tokens en inferencias inútiles), el payload ingresa a un nodo evaluador configurado de forma algorítmica y determinista (`temperature: 0, topK: 1`).
+### Seguridad en LLMs (NIST AI RMF) y WAF Semántico (L2/L3)
+Para prevenir el *Prompt Injection*, la evasión y mitigar riesgos críticos de **OWASP Top 10 for LLMs (LLM01/LLM02)**, el payload ingresa a un WAF Semántico. Este nodo evaluador determinista (`temperature: 0, topK: 1`) opera como control preventivo primario alineado a NIST AI RMF, optimizando simultáneamente el OPEX al descartar inferencias maliciosas tempranamente.
 
 *Extracto Core: Prompt Engineering Defensivo (L2)*
 ```text
@@ -204,8 +204,8 @@ EJEMPLOS:
 ```
 *Justificación (L3):* Si el WAF retorna `MALICIOSO`, un nodo `Switch` desvía el flujo, inyectando directamente a la API de Chatwoot un mensaje punitivo: *"Mensaje bloqueado por políticas de seguridad..."* y bloquea al usuario sin jamás tocar la memoria o el modelo principal.
 
-### Gobierno Agéntico y Tool Calling Restringido (L2 / L3)
-El `AI Agent` principal opera con un *System Prompt* inquebrantable que define su comportamiento perimetral, la lógica condicional de ejecución de herramientas y las salvaguardas (anti-alucinación, sanitización de contactos de terceros).
+### GRC, Privacidad de Datos (DLP) y Gobierno Agéntico (L2 / L3)
+El `AI Agent` principal opera con un *System Prompt* inquebrantable que define su comportamiento perimetral. Funciona como un control formal de **Data Loss Prevention (DLP)**, forzando la sanitización de contactos de terceros para cumplir con normativas de privacidad (**GDPR/CCPA**) y ejecutando salvaguardas anti-alucinación. A través de **FAIR**, comprobamos que este control preventivo reduce sustancialmente la *Frecuencia de Eventos de Pérdida (LEF)* ante intentos de exfiltración.
 
 *Extracto Core: System Prompt del AI Agent Orquestador (L2)*
 ```text

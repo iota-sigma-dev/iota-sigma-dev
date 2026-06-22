@@ -267,8 +267,9 @@ Para proteger la capa cognitiva del CoWorker y optimizar el consumo de tokens, d
 
 En un SaaS tradicional, el proveedor asume el costo de las APIs externas (LLMs, WhatsApp, SMS), inflando el precio final y asumiendo riesgos mortales de *Rate Limiting* globales. Para OrderKill, diseñé una arquitectura financiera y técnica estricta: **BYOT (Bring Your Own Token)** acoplada a un sistema de **Fallback Resiliente**.
 
-**El Desafío del Quota Exhaustion (L3):**
-El inquilino (Tenant) ingresa sus propias credenciales de OpenAI o Twilio en el Panel. Estas se cifran de forma simétrica (`aes-256-gcm`) antes de persistirse en la DB. Sin embargo, si el token del Tenant se queda sin fondos (HTTP 402) o es revocado (HTTP 401), la cadena de automatización no puede simplemente colapsar ante el usuario final (B2C). Diseñé un patrón de *Fallback* donde el sistema detecta la falla del token inyectado y conmuta dinámicamente a un *Platform Token* (Nuestra API Key maestra), garantizando la entrega del servicio pero registrando un evento de facturación interna (*Overage*) para cobrar el diferencial operativo a fin de mes.
+**El Desafío del Quota Exhaustion y Análisis Financiero FAIR (L3):**
+El inquilino (Tenant) ingresa sus propias credenciales de OpenAI o Twilio en el Panel. Estas se cifran de forma simétrica (`aes-256-gcm`) antes de persistirse en la DB. Sin embargo, si el token del Tenant se queda sin fondos (HTTP 402) o la API colapsa, la cadena de automatización no puede colapsar ante el usuario final (B2C). Diseñé un patrón de *Fallback* regido por umbrales rígidos de tolerancia: si se detecta una latencia sostenida > `4000ms` o una tasa de error de inferencia > `2%` (ej. HTTP `503 Service Unavailable`, `401 Unauthorized`), el sistema conmuta dinámicamente a un *Platform Token* (Nuestra API Key maestra).
+Cuantificando el impacto mediante metodologías **FAIR**, esta acción preventiva minimiza la *Magnitud de Pérdida Probable (PLM)* protegiendo los ingresos directos del servicio transaccional y anulando el coste del *downtime*. Al conmutar, se garantiza la entrega del servicio y se registra un evento de facturación interna (*Overage*) para cobrar el diferencial operativo a fin de mes.
 
 *Extracto Core: Inyección de Credenciales y Fallback en Node Worker (L2)*
 ```typescript

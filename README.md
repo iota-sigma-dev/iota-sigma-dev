@@ -1,5 +1,5 @@
 # 🦅 Iota-Signa-Dev
-**Technical Project Manager | DevSecOps & AI-Augmented SDLC Architect**
+**GRC Program Manager | Security Architect | DevSecOps & AI-Augmented SDLC Lead**
 
 > "Securing the evolution of autonomous systems through robust governance, immutable infrastructure, and high-performance engineering."
 
@@ -70,38 +70,28 @@ A curated selection of technical validations supporting my multi-disciplinary ex
 
 ---
 
-## 🏗️ Technical Strategy (The "How")
+## ⚖️ Risk Management & Vulnerability Governance
 
-My ecosystems are engineered for extreme scalability and security through a modular, automated approach:
+My ecosystems are governed by "Security by Design" principles, leveraging international compliance frameworks to mitigate end-to-end risks, translating deep technical expertise into quantifiable business value.
 
-- **Monorepo Orchestration:** Implementing **Turborepo** to manage high-concurrency apps while maintaining shared logic through internal packages.
-- **Automated Multi-Tenancy:** Robust isolation layers using **Prisma Client Extensions**, injecting `tenantId` context into every DB operation, reinforced by **PostgreSQL RLS**.
-- **Agentic AI Integration:** Building AI assistants using **LangChain** and **n8n** for complex tool-calling and **pgvector/Qdrant** for semantic search.
-- **Shift-Left Security:** Hardening SDLC by integrating **Semgrep** and **Gitleaks** directly into CI pipelines.
-- **Edge-Ready Performance:** Utilizing **Hono** and **Jose** (JWT/JWE) ensuring AuthN/AuthZ layers are compatible with global Edge runtimes.
-
----
-
-## 🔬 Technical Deep Dives & Security Hardening
-
-Beyond standard development, I specialize in resolving complex architectural failures and implementing high-level security controls:
-
-- **Advanced System Remediation:** Solved critical race conditions in **systemd** sockets and complex **NetworkManager/Netplan** integration issues.
-- **IDS/IPS Orchestration:** Implemented and tuned **CrowdSec** security engines, developing custom detection scenarios for HTTP-CVEs and botnets.
-- **Enterprise RBAC & ACLs:** Designed granular access control using **POSIX ACLs** and specialized **Sudoers** whitelisting.
-- **Zero-Trust Perimeter:** Secured administrative panels using **Cloudflare Zero Trust** tunnels, eradicating vulnerable public-facing ports.
+- **Risk Quantification & Vulnerability Management:**
+  - **Severity & Probability Metrics:** Applying **CVSS v4.0** to score intrinsic technical severity alongside **EPSS** (Exploit Prediction Scoring System) to evaluate real-world threat intelligence and probability of exploitation.
+  - **Financial Risk Quantification:** Utilizing the **FAIR** (Factor Analysis of Information Risk) framework to translate technical vulnerabilities into Expected Annualized Loss (ALE), providing C-Suite executives with clear financial metrics for decision-making.
+  - **AI Governance:** Implementing **NIST AI RMF** (Map, Measure, Manage) to govern autonomous agentic features, explicitly preventing prompt injection, data leakage, and controlling algorithmic bias.
+  - **Vulnerability Lifecycle:** Automating asset scanning (Semgrep, Trivy) in alignment with **NIST SP 800-40** guidelines for enterprise patch management.
 
 ---
 
-## 🛠️ Core Technology Stack
+## 🏗️ Security Architecture & Compliance Frameworks
 
-| Domain | Tools & Technologies |
-| :--- | :--- |
-| **Artificial Intelligence** | LangChain, n8n, RAG Engines, Vector DBs (pgvector, Qdrant), Anthropic/OpenAI |
-| **Security & InfoSec** | IAM, JWT/JWE (Jose), Semgrep, Gitleaks, Ethical Hacking (HTB), Burp Suite |
-| **Infrastructure / DevOps** | Docker, Turborepo, PNPM, NGINX, Redis, PgBouncer, Terraform, Bash/Python |
-| **Fullstack Development** | Next.js 15/16 (App Router), React 19, TypeScript 5.7, Prisma ORM, Hono |
-| **Compliance** | ISO/IEC 27001, NIST CSF, HIPAA, GDPR, CCPA |
+| Technical Component | GRC Control Domain | ISO 27001 / NIST CSF | SOC 2 / PCI-DSS v4.0 | Cybersecurity Frameworks (OWASP, MITRE) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Row Level Security (RLS)** | Data isolation and confidentiality control in multi-tenant SaaS environments. | A.8.12, A.8.3 / PR.AC-1 | CC6.1, CC6.3 / Req. 3, Req. 7 | **OWASP Top 10 (A01:2021-BOLA)**: DB-level cryptographic mitigation. |
+| **Cloudflare Zero Trust & UFW** | Perimeter access management, reducing critical asset attack surface. | A.8.20 / PR.PT-4 | CC6.6, CC6.7 / Req. 1 | **MITRE D3FEND (DATT)**: Inbound filtering & robust perimeter fortification. |
+| **CI/CD Pipelines (Semgrep, Trivy)** | Vulnerability management across the Software Development Life Cycle (Secure SDLC). | A.8.25, A.8.28 / PR.PS-1 | CC7.1, CC7.2 / Req. 6 | **OWASP ASVS v4.0**: Automated verification level security testing. |
+| **Semantic WAF & Intent Validation** | Proactive countermeasures against logical flaws and LLM injection vectors. | A.8.28 / PR.IR-1 | CC6.6 / Req. 6.4 | **OWASP Top 10 for LLMs (LLM01/LLM02)**: Active LLM payload sanitization. |
+| **Async Orchestration (n8n, CrowdSec)**| Automated Incident Response (IR) playbooks and DoS/anomaly mitigation. | A.5.24 - A.5.28 / DE.AE, PR.IR | CC7.3, CC7.4 / Req. 10, Req. 12.10 | **MITRE ATT&CK (T1499, T1110)**: Dynamic blocking of brute-force and DoS. |
+| **API Isolation (BYOT & Fallback)** | Mitigation of Third-Party Vendor Exposure (Supply Chain Risk). | A.8.12, A.5.15 / PR.AC-1 | CC6.1, CC6.2 / Req. 3.4, Req. 12.8 | **OWASP API Security (API10:2023)**: Unsafe consumption of APIs protection. |
 
 ---
 

@@ -102,7 +102,7 @@ Diseñé un entorno polarizado para priorizar tanto la agilidad (*Vibe Coder fri
 La seguridad se inyecta desde la terminal del desarrollador. Adoptamos *Trunk-Based Development* gestionado de forma integral en GitHub Projects (SSOT Kanban).
 Todo *Pull Request* hacia `main` enfrenta el **Integrity Guard** y el **Security Pipeline**, ejecutado en GitHub Actions:
 - **SAST (Semgrep):** Con reglas customizadas para evitar inyecciones e instanciación insegura del cliente Prisma. Las exclusiones (ej. `# nosemgrep`) están sumamente restringidas y prohibidas de modificar por la IA sin autorización explícita.
-- **SCA (Trivy) & Secret Scanning (Gitleaks):** Analizan paquetes de NPM y commits interceptando tokens quemados (credenciales, LLM keys). Los pre-commits vía *Husky* impiden empujar el fallo al origen remoto.
+- **Supply Chain Security y Gestión Cuantitativa de Riesgos (FAIR & Trivy):** La imagen Docker se escanea en tiempo de compilación mediante Trivy. Si se detectan vulnerabilidades **CRÍTICAS** o **ALTAS** en las dependencias base (ej. librerías subyacentes del SO o de Node), el *pipeline* falla de inmediato abortando la generación de artefactos. Este control preventivo mitiga el riesgo de vulnerabilidades heredadas e impacta directamente en nuestro análisis cuantitativo (**FAIR**), reduciendo drásticamente la **Frecuencia de Eventos de Pérdida (LEF)** asociada a la explotación de componentes de terceros. Además, Gitleaks intercepta tokens quemados previniendo fugas en los commits.
 
 ## 🗄️ Motor de Datos y Aislamiento Multi-Tenant (L2 / L3)
 
